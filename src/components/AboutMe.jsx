@@ -63,7 +63,7 @@ const AboutMe = () => {
                 <a>1998.01.21</a>
                 <a>Kyunggi Univ.</a>
               </div>
-              <div className="introButton2">gaebong2da@naver.com</div>
+              <div className="introButton2">2gayoung.2da@gmail.com</div>
               <div className="introButton3">
                 <a
                   href="https://github.com/gaebonglee"
