@@ -51,7 +51,10 @@ const AboutMe = () => {
         <div className="myInfoWrap">
           <div className="imgWrap">
             <div className="background_circle"></div>
-            <img src={`${process.env.PUBLIC_URL}/image/Meepng.png`} alt="Me" />
+            <img
+              src={`${process.env.PUBLIC_URL}/image/aboutme/Meepng.png`}
+              alt="Me"
+            />
           </div>
           <div className="page2_description">
             <div className="introBorder">
