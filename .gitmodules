@@ -1,0 +1,3 @@
+[submodule "exchangeCurrency"]
+	path = exchangeCurrency
+	url = https://github.com/gaebonglee/exchangeCurrency.git

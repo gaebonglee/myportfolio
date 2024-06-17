@@ -15,14 +15,15 @@
     "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+"scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -r exchange_currency build/exchange_currency",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
+},
+
   "eslintConfig": {
     "extends": [
       "react-app",
