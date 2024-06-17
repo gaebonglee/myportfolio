@@ -40,7 +40,7 @@ const projects = [
     tech: "HTML5, CSS3, JavaScript",
     mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
     image: `${process.env.PUBLIC_URL}/image/project/exchange_currency.png`,
-    projectLink: "/exchangeCurrency/index.html",
+    projectLink: `/myportfolio/exchangeCurrency/index.html`,
     githubLink: "https://github.com/gaebonglee/exchangeCurrency.git",
   },
 ];
