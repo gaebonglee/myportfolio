@@ -10,7 +10,7 @@ const projects = [
     mywork: "Design, Front-end, Back-end",
     image: `${process.env.PUBLIC_URL}/image/project/TMP.png`,
     projectLink:
-      "https://gayounglee.notion.site/Trainer-Matching-Project-PPT-6c02aff850184dbeb843dff6fd695f81?pvs=4",
+      "https://gayounglee.notion.site/Trainer-Matching-Project-PPT-6c02aff850184dbeb843dff6fd695f81",
     githubLink: "https://github.com/gaebonglee/TMP.git",
   },
   {
