@@ -33,7 +33,7 @@ const projects = [
     mywork: "Design, Front-end",
     image: `${process.env.PUBLIC_URL}/image/project/Portfolio.png`,
     projectLink: "https://gaebonglee.github.io/myportfolio/",
-    githubLink: "https://github.com/gaebonglee/portfolio.git",
+    githubLink: "https://github.com/gaebonglee/myportfolio.git",
   },
   {
     title: "Exchange Currency",
