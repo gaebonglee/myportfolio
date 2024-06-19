@@ -17,11 +17,11 @@ const projects = [
     title: "ShoppingMall Luks",
     description:
       "개인프로젝트로 문자인증과 주소찾기 API를 활용한 쇼핑몰 사이트입니다.",
-    period: "2024.05.25 ~ 2024.06.11",
+    period: "2024.05.25 ~ 2024.06.14",
     tech: "React, Scss, JavaScript, axios, API, MySQL, react(library,hook)",
     mywork: "Design, Front-end, Back-end",
     image: `${process.env.PUBLIC_URL}/image/project/luks.png`,
-    // projectLink: "https://github.com/gaebonglee/project2",
+    projectLink: "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
     githubLink: "https://github.com/gaebonglee/luks.git",
   },
   {
