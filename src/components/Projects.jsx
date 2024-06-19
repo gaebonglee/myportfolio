@@ -21,7 +21,8 @@ const projects = [
     tech: "React, Scss, JavaScript, axios, API, MySQL, react(library,hook)",
     mywork: "Design, Front-end, Back-end",
     image: `${process.env.PUBLIC_URL}/image/project/luks.png`,
-    projectLink: "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
+    projectLink:
+      "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
     githubLink: "https://github.com/gaebonglee/luks.git",
   },
   {
@@ -31,7 +32,7 @@ const projects = [
     tech: "React, Scss, API react-hook, Swipe",
     mywork: "Design, Front-end",
     image: `${process.env.PUBLIC_URL}/image/project/Portfolio.png`,
-    // projectLink: "https://github.com/gaebonglee/project3",
+    projectLink: "https://gaebonglee.github.io/myportfolio/",
     githubLink: "https://github.com/gaebonglee/portfolio.git",
   },
   {
