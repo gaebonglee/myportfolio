@@ -1,0 +1,13 @@
+.gradient-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // 페이지 길이를 화면 전체로 설정
+  background: linear-gradient(135deg, #cd97ff, #7c81ff);
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  z-index: -1;
+}

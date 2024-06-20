@@ -1,0 +1,32 @@
+.FrontImage_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; // IntroText보다 앞에 위치
+}
+
+.imageWrap {
+  position: relative;
+
+  .iconimg {
+    position: absolute;
+  }
+
+  .heart2 {
+    width: 370px;
+    bottom: 5rem;
+    left: 11rem;
+    transform: rotate(15deg);
+  }
+  .flower1 {
+    width: 100px;
+    bottom: 1rem;
+    right: 16rem;
+    transform: rotate(-10deg);
+  }
+}

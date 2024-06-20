@@ -1,13 +1,12 @@
 import React from "react";
-
-// import Portfolio from "./components/Portfolio";
-import SwiperComponent from "./components/SwiperComponent";
+import Background from "./components/Background";
+import Intro from "./pages/Intro";
 
 const App = () => {
   return (
-    <div>
-      {/* <Portfolio /> */}
-      <SwiperComponent />
+    <div className="Portfolio_container">
+      <Background />
+      <Intro />
     </div>
   );
 };
