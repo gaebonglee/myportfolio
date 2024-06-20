@@ -1,0 +1,229 @@
+@import "./common.scss";
+
+.AboutMeText_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.AboutMeText_titleWrap {
+  p {
+    margin: 1rem;
+    margin-left: 30rem; // 왼쪽 여백 추가
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+    text-shadow: 5px 5px 1px #f80186;
+    transform: rotate(10deg);
+  }
+}
+
+.faceImg {
+  position: relative;
+  img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  .faceImg_circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+.AboutMeText_infoWrap,
+.AboutMeText_descriptionWrap {
+  display: flex;
+  gap: 1rem;
+}
+
+.BrowserWindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $primary-color;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7);
+  background: #fff;
+
+  .contentsTap {
+    background-color: #5f649b;
+    width: 100%;
+
+    .tapWrap {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      height: 1rem;
+      p {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .Browser_iconWrap {
+    display: flex;
+    gap: 5px;
+    a {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 1px solid black;
+      box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .infoText_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #abbae5;
+
+    .info {
+      padding: 10px;
+      border: 1px solid black;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: white;
+
+      &.name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &.github {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.backgroundColor {
+  background-color: #abbae5;
+  padding: 15px;
+}
+
+.textContents {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  p {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: gray;
+    }
+  }
+}
+
+.skills_wrap {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.backgroundColor {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #abbae5;
+  padding: 15px;
+}
+
+.textContents {
+  width: 100%; // 추가: 내용이 가득 차도록 설정
+  padding: 15px;
+  background-color: white;
+  border: 1px solid black;
+  p {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background-color: gray;
+    }
+  }
+}
+
+.skills_icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+
+  .skill_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+
+    &:hover .skill_level {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+    }
+
+    img {
+      border: 1px solid black;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .skill_level {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 2;
+    }
+  }
+}
