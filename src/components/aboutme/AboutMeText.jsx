@@ -51,7 +51,6 @@ const AboutMeText = () => {
       </div>
       <div className="AboutMeText_infoWrap">
         <div className="faceImg">
-          <div className="faceImg_circle"></div>
           <img
             src={`${process.env.PUBLIC_URL}/image/aboutme/Meepng.png`}
             alt="Me"
