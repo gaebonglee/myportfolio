@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/AboutMeText.scss";
+
 //아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";
 import { FaRegWindowRestore } from "react-icons/fa6";
@@ -73,23 +74,25 @@ const AboutMeText = () => {
               </div>
             </div>
           </div>
-          <div className="infoText_wrap">
-            <div className="info name">
-              <a>이가영</a>
-              <a>1998.01.21</a>
-              <a>Kyunggi Univ.</a>
-            </div>
-            <div className="info email">
-              <a>2gayoung.2da@gmail.com</a>
-            </div>
-            <div className="info github">
-              <a
-                href="https://github.com/gaebonglee"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GITHUB
-              </a>
+          <div className="backgroundColor">
+            <div className="infoText_wrap">
+              <div className="info name">
+                <a>이가영</a>
+                <a>1998.01.21</a>
+                <a>Kyunggi Univ.</a>
+              </div>
+              <div className="info email">
+                <a>2gayoung.2da@gmail.com</a>
+              </div>
+              <div className="info github">
+                <a
+                  href="https://github.com/gaebonglee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GITHUB
+                </a>
+              </div>
             </div>
           </div>
         </div>

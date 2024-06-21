@@ -40,95 +40,36 @@
   gap: 1rem;
 }
 
-.BrowserWindow {
+.infoText_wrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid $primary-color;
-  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7);
-  background: #fff;
+  gap: 10px;
 
-  .contentsTap {
-    background-color: #5f649b;
-    width: 100%;
-
-    .tapWrap {
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      height: 1rem;
-      p {
-        font-size: 20px;
-        font-weight: 700;
-      }
-    }
-  }
-
-  .Browser_iconWrap {
-    display: flex;
-    gap: 5px;
-    a {
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 1.2rem;
-      height: 1.2rem;
-      border: 1px solid black;
-      box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
-    }
-  }
-
-  .infoText_wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .info {
     padding: 10px;
-    background-color: #abbae5;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
 
-    .info {
-      padding: 10px;
-      border: 1px solid black;
-      font-size: 16px;
-      font-weight: 700;
-      background-color: white;
-
-      &.name {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      &.github {
-        a {
-          text-decoration: none;
-          color: black;
-        }
+    &.name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &.github {
+      a {
+        text-decoration: none;
+        color: black;
       }
     }
   }
-}
-
-.backgroundColor {
-  background-color: #abbae5;
-  padding: 15px;
 }
 
 .skills_wrap {
   display: flex;
   flex-grow: 1;
   align-items: stretch;
-}
-
-.backgroundColor {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #abbae5;
-  padding: 15px;
 }
 
 .textContents {

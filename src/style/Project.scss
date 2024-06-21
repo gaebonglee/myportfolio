@@ -1,0 +1,127 @@
+.productDetail_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .product {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: white;
+
+    &.detailWrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 800px; /* 고정된 너비 설정 */
+      margin: 0 auto; /* 가운데 정렬 */
+      flex-wrap: wrap; /* 내용이 겹치지 않도록 */
+    }
+
+    &.slideWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 800px; /* 고정된 너비 설정 */
+      margin: 0 auto; /* 가운데 정렬 */
+
+      button {
+        background-color: white;
+        color: #5f649b;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.explanation {
+  h3 {
+    color: #4c4c6d;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .explanation_inner {
+    margin-bottom: 12px;
+  }
+
+  .description {
+    p {
+      font-size: 15px;
+      font-weight: 500;
+      word-break: keep-all;
+      line-height: 1.4;
+    }
+  }
+  .period,
+  .tech,
+  .mywork {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  .linkWrap {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin-top: 1rem;
+
+    a {
+      padding: 5px 10px;
+      border: none;
+      font-weight: 600;
+      color: white;
+      background-color: #5f649b;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+.imgfile {
+  flex: 1;
+  min-width: 200px;
+  max-width: 200px;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 이미지가 컨테이너에 맞게 조정 */
+  }
+}
+
+.explanation {
+  flex: 2;
+  width: 400px;
+}
+
+.projectCards {
+  display: flex;
+  gap: 10px; /* 아이콘 간 간격 추가 */
+
+  .projectCard {
+    flex: 0 0 auto;
+    img {
+      border: 1px solid black;
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+}
