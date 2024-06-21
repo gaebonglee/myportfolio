@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../../style/Project.scss";
 // 아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";
@@ -57,9 +57,45 @@ const projects = [
 
 const Project = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            imgRef.current.classList.add("right_to_center");
+            imgRef.current.classList.remove("center_to_right");
+          } else {
+            imgRef.current.classList.add("center_to_right");
+            imgRef.current.classList.remove("right_to_center");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (imgRef.current) {
+      observer.observe(imgRef.current);
+    }
+
+    return () => {
+      if (imgRef.current) {
+        observer.unobserve(imgRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="project_container">
+      <div className="project_titleWrap">
+        <img
+          src={`${process.env.PUBLIC_URL}/image/project/projectsIcon.png`}
+          alt="projectsIcon"
+          ref={imgRef}
+          className="projectsIcon"
+        />
+      </div>
       <div className="BrowserWindow">
         <div className="contentsTap">
           <div className="tapWrap">

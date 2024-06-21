@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../style/AboutMeText.scss";
 
-//아이콘
+// 아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";
 import { FaRegWindowRestore } from "react-icons/fa6";
 import { RiCloseLargeFill } from "react-icons/ri";
@@ -10,12 +10,12 @@ const skills = [
   {
     name: "HTML5",
     level: 80,
-    image: `${process.env.PUBLIC_URL}/image/aboutme/HTML5_logo.png`,
+    image: `${process.env.PUBLIC_URL}/image/aboutme/htmlIcon.png`,
   },
   {
     name: "CSS3",
     level: 80,
-    image: `${process.env.PUBLIC_URL}/image/aboutme/css_logo.jpg`,
+    image: `${process.env.PUBLIC_URL}/image/aboutme/cssIcon.png`,
   },
   {
     name: "JavaScript",
@@ -45,10 +45,44 @@ const skills = [
 ];
 
 const AboutMeText = () => {
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            imgRef.current.classList.add("left_to_center");
+            imgRef.current.classList.remove("center_to_left");
+          } else {
+            imgRef.current.classList.add("center_to_left");
+            imgRef.current.classList.remove("left_to_center");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (imgRef.current) {
+      observer.observe(imgRef.current);
+    }
+
+    return () => {
+      if (imgRef.current) {
+        observer.unobserve(imgRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="AboutMeText_container">
       <div className="AboutMeText_titleWrap">
-        <p>ABOUT ME</p>
+        <img
+          src={`${process.env.PUBLIC_URL}/image/aboutme/aboutmeLogo.png`}
+          alt="aboutmeLogo"
+          ref={imgRef}
+          className="aboutmeLogo"
+        />
       </div>
       <div className="AboutMeText_infoWrap">
         <div className="faceImg">
