@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../style/Project.scss";
+import "../../style/main.scss";
 // 아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";
 import { FaRegWindowRestore } from "react-icons/fa6";

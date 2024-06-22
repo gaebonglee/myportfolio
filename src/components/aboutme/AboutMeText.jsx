@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../../style/AboutMeText.scss";
+import "../../style/main.scss";
 
 // 아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/FrontImage.scss";
+import "../../style/main.scss";
 
 const FrontImage = () => {
   return (

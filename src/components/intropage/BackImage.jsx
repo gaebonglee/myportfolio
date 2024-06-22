@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/BackImage.scss";
+import "../../style/main.scss";
 
 const BackImage = () => {
   return (
