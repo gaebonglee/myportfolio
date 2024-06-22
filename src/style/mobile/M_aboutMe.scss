@@ -15,7 +15,7 @@
   position: relative;
 
   .aboutmeLogo {
-    width: 20rem;
+    width: 10rem;
     position: absolute;
     bottom: 1rem;
     left: 0;
@@ -51,8 +51,8 @@
 .faceImg {
   position: relative;
   img {
-    width: 175px;
-    height: 175px;
+    max-width: 150px;
+    max-height: 150px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -62,16 +62,16 @@
 
 .AboutMeText_infoWrap,
 .AboutMeText_descriptionWrap {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   position: relative; /* 부모 요소에 position: relative; 추가 */
 }
-
 .AboutMeText_descriptionWrap {
-  margin: 0 18rem;
-  min-width: 1024px;
+  margin: 0 5rem;
+  min-width: 410px;
 }
 
 .AboutMeText_infoWrap {
@@ -90,7 +90,7 @@
   .info {
     padding: 10px;
     border: 1px solid black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 700;
     background-color: white;
 

@@ -1,15 +1,26 @@
 @import "./common.scss";
 @import "./themes/MediaQueries.scss";
 
-//------------------------desktop.ver
+//------------------------desktop,tablet,mobile
 @import "./desktop/Background.scss";
 @import "./desktop/BackImage.scss";
 @import "./desktop/FrontImage.scss";
 @import "./desktop/IntroText.scss";
-@import "./desktop//AboutMeBack.scss";
-@import "./desktop/AboutMeText.scss";
-@import "./desktop/Project.scss";
 
-//------------------------tablet.ver
+//------------------------desktop.ver
+@include respond-to("desktop") {
+  @import "./desktop//AboutMeBack.scss";
+  @import "./desktop/AboutMeText.scss";
+  @import "./desktop/Project.scss";
+}
+
+//------------------------tablet.ver.
+
+@include respond-to("tablet") {
+  @import "./tablet/T_aboutMe.scss";
+}
 
 //------------------------mobile.ver
+@include respond-to("mobile") {
+  @import "./mobile/M_aboutMe.scss";
+}

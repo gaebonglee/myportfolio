@@ -18,24 +18,24 @@
   }
 
   .heart2 {
-    width: 370px;
+    width: 24rem;
     bottom: 5rem;
     left: 11rem;
     transform: rotate(15deg);
     @include respond-to("mobile") {
-      width: 200px;
+      width: 11rem;
       bottom: 2.5rem;
-      left: 5.5rem;
+      left: 6rem;
     }
 
     @include respond-to("tablet") {
-      width: 290px;
+      width: 18rem;
       bottom: 3.75rem;
       left: 8.5rem;
     }
 
     @include respond-to("desktop") {
-      width: 370px;
+      width: 24rem;
       bottom: 5rem;
       left: 11rem;
     }

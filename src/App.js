@@ -3,7 +3,7 @@ import "./App.scss";
 import Background from "./components/Background";
 import Intro from "./pages/Intro";
 import AboutMe from "./pages/AboutMe";
-import Projects from "./pages/Projects";
+//import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <div className="PortfolioContent_container">
         <Intro />
         <AboutMe />
-        <Projects />
+        {/*<Projects />*/}
       </div>
     </div>
   );
