@@ -22,11 +22,45 @@
     bottom: 5rem;
     left: 11rem;
     transform: rotate(15deg);
+    @include respond-to("mobile") {
+      width: 200px;
+      bottom: 2.5rem;
+      left: 5.5rem;
+    }
+
+    @include respond-to("tablet") {
+      width: 290px;
+      bottom: 3.75rem;
+      left: 8.5rem;
+    }
+
+    @include respond-to("desktop") {
+      width: 370px;
+      bottom: 5rem;
+      left: 11rem;
+    }
   }
   .flower1 {
     width: 100px;
     bottom: 1rem;
     right: 16rem;
     transform: rotate(-10deg);
+    @include respond-to("mobile") {
+      width: 50px;
+      bottom: 0.5rem;
+      right: 8rem;
+    }
+
+    @include respond-to("tablet") {
+      width: 70px;
+      bottom: 0.75rem;
+      right: 12rem;
+    }
+
+    @include respond-to("desktop") {
+      width: 100px;
+      bottom: 1rem;
+      right: 16rem;
+    }
   }
 }

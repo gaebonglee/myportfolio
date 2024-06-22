@@ -13,8 +13,23 @@
 
   .cloudwrap {
     position: absolute;
-    width: 40rem; // 원하는 구름 이미지의 크기로 조정
+    width: 45rem; // 원하는 구름 이미지의 크기로 조정
     height: auto;
+    @include respond-to("mobile") {
+      position: absolute;
+      width: 20rem;
+      height: auto;
+    }
+    @include respond-to("tablet") {
+      position: absolute;
+      width: 30rem;
+      height: auto;
+    }
+    @include respond-to("desktop") {
+      position: absolute;
+      width: 45rem;
+      height: auto;
+    }
 
     &.cloud2,
     &.cloud4 {
@@ -32,7 +47,7 @@
   }
 
   .cloud3 {
-    top: 35%;
+    top: 25%;
   }
 
   .cloud4 {
