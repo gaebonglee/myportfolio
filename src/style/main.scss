@@ -9,7 +9,6 @@
 
 //------------------------desktop.ver
 @include respond-to("desktop") {
-  @import "./desktop//AboutMeBack.scss";
   @import "./desktop/AboutMeText.scss";
   @import "./desktop/Project.scss";
 }
@@ -18,9 +17,11 @@
 
 @include respond-to("tablet") {
   @import "./tablet/T_aboutMe.scss";
+  @import "./tablet/T_project.scss";
 }
 
 //------------------------mobile.ver
 @include respond-to("mobile") {
   @import "./mobile/M_aboutMe.scss";
 }
+@import "./mobile/M_project.scss";

@@ -1,8 +1,16 @@
 .Portfolio_container {
   position: relative;
   width: 100%;
-  min-height: 110vh;
+  min-height: 100vh;
   overflow: hidden;
+}
+
+.Intro_section,
+.AboutMe_section,
+.Project_section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .content_container {
