@@ -26,7 +26,7 @@ const projects = [
     period: "2024.05.25 ~ 2024.06.14, 지속 업데이트 예정",
     tech: "React, Scss, JavaScript, axios, API, MySQL, react(library,hook)",
     mywork: "Design, Front-end, Back-end",
-    image: `${process.env.PUBLIC_URL}/image/project/luks.png`,
+    image: `${process.env.PUBLIC_URL}/image/project/LUKS.png`,
     projectLink:
       "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
     githubLink: "https://github.com/gaebonglee/luks.git",
@@ -91,7 +91,7 @@ const Projects = () => {
       <div className="pages">
         <div className="project_container">
           <div className="project_titleWrap">
-             <img
+            <img
               src={`${process.env.PUBLIC_URL}/image/project/projectsIcon.png`}
               alt="projectsIcon"
               ref={imgRef}
