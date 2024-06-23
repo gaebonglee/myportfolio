@@ -91,7 +91,7 @@ const Projects = () => {
       <div className="pages">
         <div className="project_container">
           <div className="project_titleWrap">
-            <img
+             <img
               src={`${process.env.PUBLIC_URL}/image/project/projectsIcon.png`}
               alt="projectsIcon"
               ref={imgRef}

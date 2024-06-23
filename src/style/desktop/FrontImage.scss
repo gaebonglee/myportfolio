@@ -19,47 +19,47 @@
 
   .heart2 {
     width: 24rem;
-    bottom: 5rem;
+    bottom: 7rem;
     left: 11rem;
     transform: rotate(15deg);
     @include respond-to("mobile") {
       width: 11rem;
-      bottom: 2.5rem;
+      bottom: 3.5rem;
       left: 6rem;
     }
 
     @include respond-to("tablet") {
       width: 18rem;
-      bottom: 3.75rem;
+      bottom: 5.25rem;
       left: 8.5rem;
     }
 
     @include respond-to("desktop") {
       width: 24rem;
-      bottom: 5rem;
+      bottom: 7rem;
       left: 11rem;
     }
   }
   .flower1 {
-    width: 100px;
+    width: 6rem;
     bottom: 1rem;
     right: 16rem;
     transform: rotate(-10deg);
     @include respond-to("mobile") {
-      width: 50px;
-      bottom: 0.5rem;
+      width: 3rem;
+      bottom: 1rem;
       right: 8rem;
     }
 
     @include respond-to("tablet") {
-      width: 70px;
+      width: 4.5rem;
       bottom: 0.75rem;
       right: 12rem;
     }
 
     @include respond-to("desktop") {
-      width: 100px;
-      bottom: 1rem;
+      width: 6rem;
+      bottom: 2rem;
       right: 16rem;
     }
   }

@@ -1,6 +1,6 @@
 .IntroText_container {
   position: absolute;
-  top: 0;
+  bottom: 2rem;
   left: 0;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@
     }
 
     @include respond-to("desktop") {
-      border: 0.5rem solid #f80186;
+      border: 1rem solid #f80186;
       width: 800px;
       height: 300px;
     }
