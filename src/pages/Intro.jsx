@@ -5,7 +5,7 @@ import FrontImage from "../components/intropage/FrontImage";
 
 const Intro = () => {
   return (
-    <section className="Intro_section" style={{ position: "relative" }}>
+    <section className="Intro_section">
       <div className="pages">
         <BackImage />
         <IntroText />

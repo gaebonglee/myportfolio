@@ -23,5 +23,5 @@
 //------------------------mobile.ver
 @include respond-to("mobile") {
   @import "./mobile/M_aboutMe.scss";
+  @import "./mobile/M_project.scss";
 }
-@import "./mobile/M_project.scss";
