@@ -53,6 +53,38 @@ const projects = [
       "https://gaebonglee.github.io/myportfolio/exchangeCurrency/index.html",
     githubLink: "https://github.com/gaebonglee/exchangeCurrency.git",
   },
+  {
+    title: "Kurly Header",
+    description: "마켓컬리의 헤더부분을 마크업한 결과물입니다.",
+    period: "2024.06.28 ~ 2024.07.01",
+    tech: "HTML5, CSS3",
+    mywork: "HTML 마크업, CSS 스타일링",
+    image: `${process.env.PUBLIC_URL}/image/project/kurlyHeader.png`,
+    projectLink: "/kurly/kurlyHeader/kurlyHeader.html",
+    githubLink: "https://github.com/gaebonglee/kurly.git",
+  },
+  {
+    title: "Kurly ProductTimer",
+    description: "마켓컬리의 카테고리 영역을 마크업한 결과물입니다.",
+    period: "2024.06.28 ~ 2024.07.01",
+    tech: "HTML5, CSS3, JavaScript",
+    mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
+    image: `${process.env.PUBLIC_URL}/image/project/kurlyProductTimer.png`,
+    projectLink: `${process.env.PUBLIC_URL}/kurly/kurlyProductTimer/timeProduct.html`,
+    githubLink: "https://github.com/gaebonglee/kurly.git",
+  },
+  {
+    title: "Kurly Category",
+    description:
+      "마켓컬리의 일일특가 상품 영역을 마크업한 결과물입니다. 24시간마다 시간이 리셋됩니다.",
+    period: "2024.06.28 ~ 2024.07.01",
+    tech: "HTML5, CSS3, JavaScript",
+    mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
+    image: `${process.env.PUBLIC_URL}/image/project/kurlyCategory.png`,
+    projectLink:
+      "https://gaebonglee.github.io/myportfolio/kurly/kurlyCategory/category.html",
+    githubLink: "https://github.com/gaebonglee/kurly.git",
+  },
 ];
 
 const Projects = () => {
