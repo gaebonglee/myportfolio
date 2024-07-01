@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../style/main.scss";
 // 아이콘
 import { FaRegWindowMinimize } from "react-icons/fa";
 import { FaRegWindowRestore } from "react-icons/fa6";
 import { RiCloseLargeFill } from "react-icons/ri";
-import { IoMdArrowDropleftCircle } from "react-icons/io";
-import { IoMdArrowDroprightCircle } from "react-icons/io";
 
 const projects = [
   {
@@ -36,7 +37,7 @@ const projects = [
     description:
       "Y2K느낌의 포트폴리오 사이트입니다. 반응형으로 제작되었습니다.",
     period: "2024.06.14 ~ 2024.06.21",
-    tech: "React, Scss, react-hook",
+    tech: "React, Scss, react-hook, react-slick", 
     mywork: "Design, Front-end",
     image: `${process.env.PUBLIC_URL}/image/project/myportfolio.png`,
     projectLink: "https://gaebonglee.github.io/myportfolio/",
@@ -60,23 +61,24 @@ const projects = [
     tech: "HTML5, CSS3",
     mywork: "HTML 마크업, CSS 스타일링",
     image: `${process.env.PUBLIC_URL}/image/project/kurlyHeader.png`,
-    projectLink: "/kurly/kurlyHeader/kurlyHeader.html",
+    projectLink:
+      "https://gaebonglee.github.io/myportfolio/kurly/kurlyHeader/kurlyHeader.html",
     githubLink: "https://github.com/gaebonglee/kurly.git",
   },
   {
     title: "Kurly ProductTimer",
-    description: "마켓컬리의 카테고리 영역을 마크업한 결과물입니다.",
+    description:
+      "마켓컬리의 카테고리 영역을 마크업한 결과물입니다. 24시간마다 시간이 리셋됩니다.",
     period: "2024.06.28 ~ 2024.07.01",
     tech: "HTML5, CSS3, JavaScript",
     mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
     image: `${process.env.PUBLIC_URL}/image/project/kurlyProductTimer.png`,
-    projectLink: `${process.env.PUBLIC_URL}/kurly/kurlyProductTimer/timeProduct.html`,
+    projectLink: `https://gaebonglee.github.io/myportfolio/kurly/timerProduct/timerProduct.html`,
     githubLink: "https://github.com/gaebonglee/kurly.git",
   },
   {
     title: "Kurly Category",
-    description:
-      "마켓컬리의 일일특가 상품 영역을 마크업한 결과물입니다. 24시간마다 시간이 리셋됩니다.",
+    description: "마켓컬리의 카테고리 영역을 마크업한 결과물입니다.",
     period: "2024.06.28 ~ 2024.07.01",
     tech: "HTML5, CSS3, JavaScript",
     mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
@@ -117,6 +119,40 @@ const Projects = () => {
       }
     };
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      ></div>
+    );
+  }
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      ></div>
+    );
+  }
 
   return (
     <section className="Projects_section">
@@ -181,10 +217,7 @@ const Projects = () => {
                 </div>
 
                 <div className="product slideWrap">
-                  <button>
-                    <IoMdArrowDropleftCircle />
-                  </button>
-                  <div className="projectCards">
+                  <Slider {...settings}>
                     {projects.map((project, index) => (
                       <div
                         key={index}
@@ -194,10 +227,7 @@ const Projects = () => {
                         <img src={project.image} alt={project.title} />
                       </div>
                     ))}
-                  </div>
-                  <button>
-                    <IoMdArrowDroprightCircle />
-                  </button>
+                  </Slider>
                 </div>
               </div>
             </div>

@@ -9,7 +9,7 @@
     width: 15rem;
     position: absolute;
     bottom: 1rem;
-    right: 0; /* 초기 위치를 오른쪽으로 설정 */
+    right: 0;
     &.right_to_center {
       animation: rightToCenter 2s forwards;
     }
@@ -56,26 +56,27 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin: 0 auto; /* 가운데 정렬 */
-      flex-wrap: wrap; /* 내용이 겹치지 않도록 */
+      margin: 0 auto;
+      flex-wrap: wrap;
     }
 
     &.slideWrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       max-width: 400px;
       margin: 0 auto;
 
-      button {
-        background-color: white;
+      .slick-prev,
+      .slick-next {
+        z-index: 1;
+      }
+      .slick-prev:before,
+      .slick-next:before {
         color: #5f649b;
-        border: none;
-        outline: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
+      }
+      .slick-next {
+        right: -12px;
+      }
+      .slick-prev {
+        left: -12px;
       }
     }
   }
@@ -157,19 +158,44 @@
   width: 400px;
 }
 
-.projectCards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* 아이콘 간 간격 추가 */
-
+.product.slideWrap {
   .projectCard {
-    flex: 0 0 auto;
+    padding: 10px;
     img {
       border: 1px solid black;
-      width: 75px;
-      height: auto;
+      width: 80px;
       object-fit: cover;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
+
+.slick-slider.slick-initialized {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-dots {
+  bottom: -10px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 5px;
+
+    button {
+      align-items: center;
+      font-size: 5px;
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 50%;
+      background-color: #ccc; /* Dot 색상 */
+      border: none;
+      outline: none;
       cursor: pointer;
     }
   }
