@@ -130,6 +130,11 @@ const AboutMeText = () => {
             </div>
           </div>
         </div>
+        <img
+          src={`${process.env.PUBLIC_URL}/image/intro/click.png`}
+          alt="clickIcon"
+          className="clickIcon"
+        />
       </div>
       <div className="AboutMeText_descriptionWrap">
         <div className="BrowserWindow">

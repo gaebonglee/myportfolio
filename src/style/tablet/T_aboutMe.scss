@@ -60,6 +60,25 @@
   }
 }
 
+.clickIcon {
+  width: 25px;
+  position: absolute;
+  bottom: -0.8rem;
+  right: 10.5rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
 .AboutMeText_infoWrap,
 .AboutMeText_descriptionWrap {
   display: flex;
