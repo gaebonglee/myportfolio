@@ -93,9 +93,9 @@ const projects = [
     period: "2024.07.18 ~ 2024.07.19",
     tech: "HTML5, CSS3, JavaScript",
     mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
-    image: `${process.env.PUBLIC_URL}/image/project/todolist.png`,
+    image: "/image/project/todolist.png",
     projectLink:
-      "https://gaebonglee.github.io/myportfolio/toDoList/myToDoList.html",
+      "https://gaebonglee.github.io/myportfoliog/toDoList/myToDoList.html",
     githubLink: "https://github.com/gaebonglee/toDoList.git",
   },
 ];
