@@ -4,3 +4,6 @@
 [submodule "kurly"]
 	path = kurly
 	url = https://github.com/gaebonglee/kurly.git
+[submodule "toDoList"]
+	path = toDoList
+	url = https://github.com/gaebonglee/toDoList.git

@@ -27,7 +27,7 @@ const projects = [
     period: "2024.05.25 ~ 2024.06.14, 지속 업데이트 예정",
     tech: "React, Scss, JavaScript, axios, API, MySQL, react(library,hook)",
     mywork: "Design, Front-end, Back-end",
-    image: `${process.env.PUBLIC_URL}/image/project/LUKS.png`,
+    image: `${process.env.PUBLIC_URL}/image/project/luks.png`,
     projectLink:
       "https://gayounglee.notion.site/Luks-PPT-2ecadfde50dd4f1f9fc3e6fe6043708d?pvs=4",
     githubLink: "https://github.com/gaebonglee/luks.git",
@@ -37,7 +37,7 @@ const projects = [
     description:
       "Y2K느낌의 포트폴리오 사이트입니다. 반응형으로 제작되었습니다.",
     period: "2024.06.14 ~ 2024.06.21",
-    tech: "React, Scss, react-hook, react-slick", 
+    tech: "React, Scss, react-hook, react-slick",
     mywork: "Design, Front-end",
     image: `${process.env.PUBLIC_URL}/image/project/myportfolio.png`,
     projectLink: "https://gaebonglee.github.io/myportfolio/",
@@ -86,6 +86,17 @@ const projects = [
     projectLink:
       "https://gaebonglee.github.io/myportfolio/kurly/kurlyCategory/category.html",
     githubLink: "https://github.com/gaebonglee/kurly.git",
+  },
+  {
+    title: "My To Do List",
+    description: "반응형으로 구현한 My To Do List 입니다.",
+    period: "2024.07.18 ~ 2024.07.19",
+    tech: "HTML5, CSS3, JavaScript",
+    mywork: "HTML 마크업, CSS 스타일링, JavaScript 기능구현",
+    image: `${process.env.PUBLIC_URL}/image/project/todolist.png`,
+    projectLink:
+      "https://gaebonglee.github.io/myportfolio/toDoList/myToDoList.html",
+    githubLink: "https://github.com/gaebonglee/toDoList.git",
   },
 ];
 
